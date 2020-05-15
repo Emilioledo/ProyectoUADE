@@ -1,0 +1,20 @@
+.login{
+    background-color: #1B1464;
+}
+.logo{
+    width: 99%;
+    height: 99%;
+    border-radius: 0%;
+}
+.titulo{
+    text-align: center;
+    color: whitesmoke;
+}
+.loginLabel{
+    width: 99%;
+    text-align: center;
+    color: whitesmoke;
+}
+.btn-login{
+    text-align: center;
+}
