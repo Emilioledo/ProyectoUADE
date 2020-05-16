@@ -2,10 +2,14 @@
     background-color: #1B1464;
 }
 .logo{
-    width: 99%;
-    height: 99%;
+    width: 30%;
     border-radius: 0%;
 }
+
+.contenedor__logo{
+    text-align: center;
+}
+
 .titulo{
     text-align: center;
     color: whitesmoke;
