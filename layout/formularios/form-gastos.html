@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de gasto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
-</body>
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-3 col-6 contenedor-formulario text-center">
+        <h1>Formulario de gasto</h1>
+        <form class="form-gasto">
+          <div class="offset-3 col-6">
+            <label for="input-descripcion">Descripción del producto</label>
+            <input id="input-descripcion" class="form-control" type="text" name="descripcion" value="" required/>
+          </div>
+          <div class="offset-3 col-6">
+            <label for="input-valor">Valor del producto</label>
+            <input id="input-valor" class="form-control" type="number" name="valor" value="" required/>
+          </div>
+          <div class="offset-3 col-6">
+            <label for="input-fecha">Fecha de compra</label>
+            <input id="input-fecha" class="form-control" type="date" name="fecha" value="" required/>
+          </div>
+          <div class="offset-3 col-6">
+            <label for="input-categoria">Categoría</label>
+            <select class="form-control custom-select custom-select-sm" id="input-categoria" name="categoria">
+                <option>Categoría 1</option>
+                <option>Categoría 2</option>
+            </select>
+          </div>
+          <div class="offset-3 col-6">
+            <label for="input-cuenta">Forma de pago?</label>
+            <select class="form-control custom-select custom-select-sm" id="input-cuenta" name="cuenta">
+                <option>Efectivo</option>
+                <option>Debito</option>
+                <option>Credito</option>
+            </select>
+          </div>
+          <div class="offset-3 col-6">
+            <label for="input-usuario">Usuario que pagó</label>
+            <select class="form-control custom-select custom-select-sm" id="input-usuario" name="usuario">
+                <option>Usuario 1</option>
+                <option>Usuario 2</option>
+                <option>Usuario 3</option>
+            </select>
+          </div>
+          <div class="offset-3 col-6">
+            <label for="input-repeticion">Repetición</label>
+            <select class="form-control custom-select custom-select-sm" id="input-repeticion" name="repeticion">
+                <option>Dia</option>
+                <option>Semanal</option>
+                <option>Mensual</option>
+                <option>Anual</option>
+            </select>
+          </div>
+          <div><br></div>
+           <button id="btn-enviar" type="submit" class="btn btn-outline-secondary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
 </html>
