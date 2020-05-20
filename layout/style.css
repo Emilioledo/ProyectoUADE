@@ -1,0 +1,160 @@
+body{
+    font-family: Jost;
+}
+
+.logo{
+    padding-top: 15px;
+    align-items: center;
+}
+
+.logo__PS{
+    background-color: #00BAAA;
+    border: 2px solid #FFA9B8;
+    font-weight: 600;
+    color: white;
+    border-radius: 25%;
+    margin-right: 7px;
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+
+.logo__texto__piggy{
+    color: #707070;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.logo__texto__saver{
+    color: #707070;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.nav{
+    padding-top: 10px;
+}
+
+.nav-link{
+    color: #00BAAA;
+    font-weight: 300;
+}
+
+.btn-info{
+    background-color: #00BAAA;
+    border-color: pink;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 50px;
+    color: #EF7B94;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 60px;
+    color: #00BAAA;
+}
+
+h3{
+    color:#00BAAA;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 24px;
+    color: #707070;
+}
+
+h5{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#destacado__parrafo{
+    padding-top: 15px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.destacado{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.boton__destacado{
+    margin-left: 125px;
+}
+
+.contenedor__iconos{
+    padding-bottom: 25px;
+}
+
+.iconos__destacados{
+    text-align: center;
+}
+
+.icono__circulo{
+    background-color: #98E7DB;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.icono__imagen{
+    padding-top: 27px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor__aplicacion{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #98E7DB;
+}
+
+#aplicacion{
+    width: 100%;
+}
+
+.icono__aplicacion{
+    width: 49%;
+}
+
+#aplicaciones__comentario{
+    color: #00BAAA;
+    font-weight: 300;
+}
+
+.contenedor__footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #FF3F6E;
+}
+
+.logo__footer{
+    padding-bottom: 25px;
+    color: white;
+}
+
+.contenedor__footer .logo__footer .logo__texto__piggy{
+    color: white;
+}
+
+.contenedor__footer .logo__footer .logo__texto__saver{
+    color: white;
+}
+
+.footer__texto{
+    color:white;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: px;
+}
