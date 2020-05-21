@@ -4,26 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/indexStyles.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PiggySaver</title>
 </head>
 <body>
-    <div class="container-xl">
+    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <header class="row estiloHeader">
-                        <div class="col-2">
-                            LOGO
+            <header class="col-10 offset-1">
+                <div class="row">
+                    <div class="col-5 logo">
+                        <span class="logo__PS">PS</span>
+                        <span class="logo__texto__piggy"> Piggy </span>
+                        <span class="logo__texto__saver">Saver</span>
+                    </div>
+                    <div class="col-7 menu">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">CARACTERISTICAS</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">APLICACIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-info rounded-pill">ACCEDER</button>
+                            </li>
+                          </ul>
+                     </div>
+                </div>
+                <div class="row destacado">
+                    <div class="col-5 destacado__texto">
+                        <h2>Piggy</h2>
+                        <h1>Saver</h1>
+                        <p id="destacado__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora itaque nam eius corporis id saepe laboriosam, repudiandae, dignissimos ipsam magnam voluptas possimus assumenda non iste omnis, obcaecati velit? Eligendi?</p>
+                        <div class="boton__destacado">
+                            <button type="button" class="btn btn-info rounded-pill">REGISTRATE</button>
                         </div>
-                        <div class="col-8 posicionNav">
-                            <nav class="nav">
-                                <a class="nav-link active" href="#">HOME</a>
-                                <a class="nav-link" href="#">CARACTERISTICAS</a>
-                                <a class="nav-link" href="#">APLICACIONES</a>
-                                <button type="button" class="btn btn-info">ACCEDER</button>
-                            </nav>   
-                        </div> 
-                </header>
+                    </div>
+                    <div class="col-7 destacado__imagen">
+                        <img src="../images/destacado.svg" alt="">
+                    </div>
+                </div>
+                <div class="row contenedor__iconos">
+                    <div class="col iconos__destacados">
+                        <figure class="icono__circulo">
+                            <img src="../images/expenses.svg" alt="" class="icono__imagen">
+                        </figure>
+                        <h4>Registro de gastos</h4>
+                    </div>
+                    <div class="col iconos__destacados">
+                        <figure class="icono__circulo">
+                            <img src="../images/search.svg" alt="" class="icono__imagen">
+                        </figure>
+                        <h4>Control y autogestion</h4>
+                    </div>
+                    <div class="col iconos__destacados">
+                        <figure class="icono__circulo">
+                            <img src="../images/analytics.svg" alt="" class="icono__imagen">
+                        </figure>
+                        <h4>Generación de reportes</h4>
+                    </div>
+                    <div class="col iconos__destacados">
+                        <figure class="icono__circulo">
+                            <img src="../images/cost.svg" alt="" class="icono__imagen">
+                        </figure>
+                        <h4>Divide tus gastos</h4>
+                    </div>
+                </div>
+                <div class="row contenedor__aplicacion">
+                    <div class="col-4 aplicacion__texto">
+                        <h3>Aplicaciones Multiplataforma</h3>
+                        <p id="aplicaciones__comentario">Piggy Saver en PC, iOS y Android</p>
+                        <div class="aplicacion__iconos">
+                            <img src="../images/gp.png" alt="" class="icono__aplicacion">
+                            <img src="../images/as.png" alt="" class="icono__aplicacion">
+                        </div>
+                    </div>
+                    <div class="col-8 aplicacion__imagen">
+                        <img src="../images/aplicacion.jpg" alt="" id="aplicacion">
+                    </div>
+                </div>
+                <div class="row contenedor__footer">
+                    <div class="col-12 logo__footer">
+                        <span class="logo__PS">PS</span>
+                        <span class="logo__texto__piggy"> Piggy </span>
+                        <span class="logo__texto__saver">Saver</span>
+                    </div>
+                    <div class="col footer">
+                        <h5>Sobre nosotros</h5>
+                        <p class="footer__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aperiam fugit nam explicabo tempora eaque eligendi, et veniam nobis.</p>
+                        <h5>Contactanos</h5>
+                        <p class="footer__texto">+54 11 4456-5609</p>
+                        <p class="footer__texto">nosotros@piggysaver.com</p>                    
+                    </div>
+                    <div class="col footer">
+                        <h5>Información</h5>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>
+                    </div>
+                    <div class="col footer">
+                        <h5>Links</h5>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>
+                        <p class="footer__texto">Lorem ipsum dolor sit</p>                    
+                    </div>
+                </div>
+            </header>
+         
             </div>
         </div>
     </div>
