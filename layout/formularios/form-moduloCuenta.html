@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/form-moduloCuenta.css">
+    <title>Modulo Cuenta</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-3 col-6">
+                <div class="containerModuloCuenta">
+                   <h2 class="tituloH2">Módulo Cuenta</h2>
+                   <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="nombreModuloCuenta">Nombre de la cuenta:</label>
+                                <input type="text" name="" id="nombreModuloCuenta">
+                            </div>
+                            <div class="col-6">
+                                <label for="tipoModuloCuenta">Tipo de cuenta:</label>
+                                <select name="" id="tipoModuloCuenta">
+                                    <option value="cuentaCorriente">Cuenta Corriente</option>
+                                    <option value="cajaAhorro">Caja de Ahorro</option>
+                                    <option value="efectivo">Efectivo</option>
+                                    <option value="ahorro">Ahorro</option>
+                                    <option value="inversiones">Inversiones</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-info botonAceptar">Agregar Cuenta</button>
+                            </div>
+                        </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
