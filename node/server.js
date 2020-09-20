@@ -76,10 +76,7 @@ const nodemon = require ('nodemon');
 const connectdb = require ('./config/database');
 const Usuario = require ('../modelos/user');
 const rutasUsuarios = require ('../routes/usuarios.js');
-
-
 const app = express();
-
 
 
 /*Puertos*/
