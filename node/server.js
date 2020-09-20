@@ -75,22 +75,19 @@ const mongoose = require ('mongoose');
 const nodemon = require ('nodemon');
 const connectdb = require ('./config/database');
 const Usuario = require ('../modelos/user');
+const rutasUsuarios = require ('../routes/usuarios.js');
 
-let app = express();
+
+const app = express();
+
+
 
 /*Puertos*/
 let port = process.env.PORT || 3000;
 
-app.get ('/usuarios', async (req, res)=>{
-    try {
-      const arrayUsuarios = await Usuario.find ();
-      console.log (arrayUsuarios);
-    } catch (error){
-      console.log (error);
-    }
-});
-
+app.use(rutasUsuarios);
 connectdb();
+
 
 app.listen (port, () =>{
   console.log ("Conectado");
