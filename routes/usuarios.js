@@ -12,7 +12,7 @@ router.get ('/usuarios', async (req, res)=>{
     }
 });
 
-router.post ('/altausuarios', async(req, res)=>{
+router.post ('/altausuario', async(req, res)=>{
     /*Modificar cuando tengamos el AJAX*/
     let nombre_= req.body.nombre;
     let apellido_= req.body.apellido;
