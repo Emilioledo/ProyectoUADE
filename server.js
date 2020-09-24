@@ -74,8 +74,8 @@ const express = require ('express');
 const mongoose = require ('mongoose');
 const nodemon = require ('nodemon');
 const connectdb = require ('./config/database');
-const Usuario = require ('../modelos/user');
-const rutasUsuarios = require ('../routes/usuarios.js');
+const Usuario = require ('./modelos/user');
+const rutasUsuarios = require ('./routes/usuarios');
 const app = express();
 
 
