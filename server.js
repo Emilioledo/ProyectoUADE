@@ -76,6 +76,7 @@ const nodemon = require ('nodemon');
 const connectdb = require ('./config/database');
 const Usuario = require ('./modelos/user');
 const rutasUsuarios = require ('./routes/usuarios');
+const rutasBilletas = require ('./modelos/wallet');
 const app = express();
 
 
@@ -83,6 +84,8 @@ const app = express();
 let port = process.env.PORT || 3000;
 
 app.use(rutasUsuarios);
+app.use (rutasBilletas);
+
 connectdb();
 
 
