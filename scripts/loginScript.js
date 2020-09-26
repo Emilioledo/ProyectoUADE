@@ -27,7 +27,7 @@ $(document).ready(() => {
 		
 	});
 
-	$("#btn").click(function (e) {
+	$("#btn_reg").click(function (e) {
 		e.preventDefault(e);
 		console.log("Click");
 		$.ajax({
