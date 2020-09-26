@@ -26,7 +26,7 @@ $(document).ready(() => {
 		$(`form section#section-${3}`).css('display', 'block');
 		
 	});
-	
+
 	$("#btn").click(function (e) {
 		e.preventDefault(e);
 		console.log("Click");
