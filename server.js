@@ -78,17 +78,16 @@ const Usuario = require ('./modelos/user');
 const rutasUsuarios = require ('./routes/usuarios');
 const rutasBilletas = require ('./modelos/wallet');
 const app = express();
+const port = process.env.PORT || 3000;
+const path = require('path');
+const publicDirectory = path.join(__dirname, './layout/');
 
-
-/*Puertos*/
-let port = process.env.PORT || 3000;
-
+app.use(express.static(publicDirectory));
 app.use(rutasUsuarios);
 app.use (rutasBilletas);
 
 connectdb();
 
-
 app.listen (port, () =>{
-  console.log ("Conectado");
+  console.log ("Conectado",port);
 });
