@@ -26,4 +26,25 @@ $(document).ready(() => {
 		$(`form section#section-${3}`).css('display', 'block');
 		
 	});
+	
+	$("#btn").click(function (e) {
+		e.preventDefault(e);
+		console.log("Click");
+		$.ajax({
+
+			url: "http://localhost:3000/altausuario",
+			dataType: 'json',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({
+				"user": $("#user").val(),
+				"mail": $("#mail").val(),
+				"password": $("#password").val(),
+				"password2": $('#password2').val()
+			}),
+			success: (datos) => {
+				console.log(datos);
+			}
+		});
+	})
 });
