@@ -27,8 +27,8 @@ $(document).ready(() => {
 		
 	});
 
-	$("#btn_reg").click(function (e) {
-		e.preventDefault(e);
+	$('#btn_reg').on( "submit", function(event){
+		e.preventDefault(event);
 		console.log("Click");
 		$.ajax({
 
@@ -37,9 +37,9 @@ $(document).ready(() => {
 			type: 'POST',
 			contentType: 'application/json',
 			data: JSON.stringify({
-				"user": $("#user").val(),
-				"mail": $("#mail").val(),
-				"password": $("#password").val(),
+				"user": $('#user').val(),
+				"mail": $('#mail').val(),
+				"password": $('#password').val(),
 				"password2": $('#password2').val()
 			}),
 			success: (datos) => {
