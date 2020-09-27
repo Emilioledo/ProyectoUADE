@@ -9,10 +9,7 @@ router.post ('/altabilletera', async (req, res) =>{
     let saldo = saldo_;
     let billetera_= {
         nombre: nombre_,
-<<<<<<< HEAD
-=======
         saldo: saldo_,
->>>>>>> d9c3aa5705ef38cdb3c528434d33ad06c8f8833f
     }
     try {
         await Wallet.create (billetera_);
