@@ -6,8 +6,10 @@ const router = express.Router();
 
 router.post ('/altabilletera', async (req, res) =>{
     let nombre = nombre_;
+    let saldo = saldo_;
     let billetera_= {
-        nombre: nombre_;
+        nombre: nombre_,
+        saldo: saldo_,
     }
     try {
         await Wallet.create (billetera_);

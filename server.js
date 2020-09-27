@@ -78,8 +78,10 @@ const Usuario = require ('./modelos/user');
 const rutasUsuarios = require ('./routes/usuarios');
 const rutasBilletas = require ('./modelos/wallet');
 const app = express();
+app.use(express.json);
 const port = process.env.PORT || 3000;
 const path = require('path');
+const { json } = require('express');
 const publicDirectory = path.join(__dirname, './layout/');
 
 app.use(express.static(publicDirectory));
