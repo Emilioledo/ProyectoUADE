@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 
 const UserEsquema = new Schema ({
     nombre: String, 
-    apellido: String, 
     mail: String, 
     password: String, 
     updated: { type: Date, default: Date.now },
