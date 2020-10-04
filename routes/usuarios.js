@@ -1,6 +1,8 @@
 const express = require ('express');
 const Usuario = require('../modelos/user');
+const bcrypt = require ('bcrypt');
 const router = express.Router();
+
 
 
 router.get ('/usuarios', async (req, res)=>{
@@ -14,14 +16,11 @@ router.get ('/usuarios', async (req, res)=>{
 
 router.post ('/altausuario', async(req, res)=>{
     // /*Modificar cuando tengamos el AJAX*/
-        let nombre_= req.body.nombre;
-        let mail_= req.body.mail;
-        let password_= req.body.password;
         let usuario_ =
             {
-                nombre: nombre_,
-                mail: mail_,
-                password: password_,
+                nombre: req.body.nombre,
+                mail: req.body.mail,
+                password: req.body.password,
             };
 
             try {
