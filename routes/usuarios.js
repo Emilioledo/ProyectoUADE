@@ -23,8 +23,9 @@ router.post ('/altausuario', async(req, res)=>{
                 password: req.body.password,
             };
 
+        const usuarioData = new Usuario;
             try {
-                await Usuario.create (usuario_);
+                await usuarioData.save();
                 console.log (usuario_);
             } catch (error){
                 console.log (error);

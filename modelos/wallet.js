@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const WalletEsquema = new Schema ({
     nombre: String,
-    saldo: Number, 
+    saldo: Number
 });
 
 const Wallet = mongoose.model('Wallet', WalletEsquema);
