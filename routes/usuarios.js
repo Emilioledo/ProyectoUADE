@@ -15,18 +15,14 @@ router.get ('/usuarios', async (req, res)=>{
 });
 
 router.post ('/altausuario', async(req, res)=>{
-    // /*Modificar cuando tengamos el AJAX*/
-        let usuario_ =
-            {
-                nombre: req.body.nombre,
-                mail: req.body.mail,
-                password: req.body.password,
-            };
 
-        const usuarioData = new Usuario;
+        const usuarioData = new Usuario (); 
+        usuarioData.nombre = req.body.nombre;
+        usuarioData.mail = req.body.mail;
+        usuarioData.password = req.body.password;
             try {
                 await usuarioData.save();
-                console.log (usuario_);
+                console.log (usuarioData);
             } catch (error){
                 console.log (error);
             }  
