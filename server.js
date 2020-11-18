@@ -80,7 +80,7 @@ const rutasBilletas = require ('./modelos/wallet');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(express.json());
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const path = require('path');
 const { json } = require('express');
 const publicDirectory = path.join(__dirname, './layout/');
@@ -88,6 +88,8 @@ const publicDirectory = path.join(__dirname, './layout/');
 app.use(express.static(publicDirectory));
 app.use(rutasUsuarios);
 app.use (rutasBilletas);
+
+app.get('/', (req, res) => res.send("Test"));
 
 connectdb();
 

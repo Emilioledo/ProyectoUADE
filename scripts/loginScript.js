@@ -32,7 +32,7 @@ $(document).ready(() => {
 		console.log("Click");
 		$.ajax({
 
-			url: "http://localhost:3000/altausuario",
+			url: "http://localhost:5000/altausuario",
 			dataType: 'json',
 			type: 'POST',
 			contentType: 'application/json',
